@@ -1,0 +1,231 @@
+@import url(./index.css);
+.header {
+  position: relative;
+  height: 65px;
+  width: 100vw;
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 15px -8px var(--mainColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 900;
+  animation: showHeader 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  & .name {
+    width: fit-content;
+    max-width: 400px;
+    height: 50px;
+    padding: 0px 10px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,var(--mainColor),var(--mainColor2));
+    color: #fff;
+    border: 2px #fff solid;
+    box-shadow: 0 2px 10px -7px #222;
+border-radius: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: right;
+    line-height: 17px;
+  animation: show 1s;
+
+    &:hover {
+      border: 2px var(--mainColor) solid;
+    }
+  }
+}
+
+.header ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  transition: 0.1s all;
+}
+.header ul li a:hover {
+  color: var(--mainColor);
+}
+.header ul li .Icon {
+  position: relative;
+  top: 3px;
+  animation: show 1s;
+
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  height: 100%;
+  animation: show 1s;
+}
+
+.header .logo .Sc_name {
+  color: var(--Black);
+  margin: 5px;
+}
+.header .logo img {
+  position: relative;
+  height: 50px;
+}
+/* SearchBar */
+.header .SearchBar {
+  position: relative;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border-radius: 30px;
+  border: 1px #eee solid;
+  box-shadow: 0 4px 10px -7px #000;
+  overflow: hidden;
+}
+.header .SearchBar:focus-within {
+  box-shadow: 0 0 10px -6px var(--mainColor);
+}
+
+.header .SearchBar input {
+  position: relative;
+  width: 90%;
+  right: 10px;
+  height: 100%;
+  border: none;
+  outline: none;
+  caret-color: var(--mainColor);
+  color: var(--Black);
+  font-size: 16px;
+  text-align: right;
+  z-index: 0;
+}
+.header .SearchBar .SrchIcon {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,var(--mainColor),var(--mainColor2));
+  border-radius: 30px;
+  z-index: 1;
+}
+.ResultBox {
+  position: absolute;
+  right: 5%;
+  top: 61px;
+  translate: -50% 0;
+  width: 40%;
+  min-height: 40px;
+  background: #fff;
+  box-shadow: 0px 6px 10px -10px #000;
+  border: #22222222 solid 1px;
+  z-index: 1000;
+  overflow: hidden;
+  padding: 10px;
+  animation: show 0.2s;
+  border-radius: 20px;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    top: 100px;
+    scale: 0;
+  }
+  100% {
+    top: 61px;
+    scale: 1;
+
+    opacity: 1;
+  }
+}
+@keyframes showHeader {
+  0% {
+    opacity: 0;
+    top: -65px;
+  }
+  100% {
+    top: 0px;
+
+    opacity: 1;
+  }
+}
+.ResultBox ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ResultBox ul li {
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  width: 200%;
+  /* height: 100%; */
+  font-size: 16px;
+}
+
+.ResultBox ul li:hover {
+  opacity: 0.5;
+  color: var(--DarkColor);
+}
+/* Meadai */
+@media (max-width: 720px) {
+  .name {
+    font-size: calc(1vh + 2vw);
+  }
+  .header .SearchBar {
+    position: absolute;
+    opacity: 0;
+  }
+  .header input {
+    position: absolute;
+    right: 0;
+    width: 100% !important;
+    text-align: right !important;
+  }
+  .header .SearchBar .SrchIcon {
+    display: none;
+  }
+
+  .header .logo .Sc_name {
+    display: none;
+  }
+  .header .SearchBar {
+    width: 80vw;
+  }
+  .ResultBox {
+    position: absolute;
+    right: 0%;
+    top: 61px;
+    translate: 0% 0;
+    width: 100vw;
+  }
+  .header .SearchBar .SrchIcon {
+    width: 20%;
+    border-radius: 25px;
+  }
+}
+.name #icon {
+  position: relative;
+  top: 0px;
+  padding: 3px;
+}

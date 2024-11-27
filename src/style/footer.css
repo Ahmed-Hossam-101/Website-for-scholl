@@ -1,0 +1,23 @@
+footer{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+justify-content: right;
+    align-items: center;
+width: fit-content;
+padding: 10px;
+border-radius:100px;
+height: 25px;
+color: #000;
+user-select: none;
+font-weight: 100;
+& a{
+    font-weight: 350;
+padding-right: 10px;
+padding-left: 10px;
+    background:linear-gradient(150deg,rgb(0, 162, 255),rgb(0, 170, 255),rgb(76, 0, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+}

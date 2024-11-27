@@ -1,0 +1,174 @@
+@import url(./index.css);
+.home{
+    width: 100vw;
+    height:calc(100vh - 65px);
+    background-image: url(../Assets/Imgs/bg.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: goAround 54s linear infinite;
+
+}
+@keyframes goAround {
+    0%{
+        background-position-y: 0%;
+    }
+    50%{
+        background-position-y: 100%;
+    }
+    100%{
+        background-position-y: 0%;
+    }
+}
+
+.home .coloredBG{
+    position: absolute;
+    top: 65px;
+    width: 100vw;
+    height:calc(100vh - 65px);
+background: linear-gradient(transparent,transparent,rgba(0, 187, 255, 0.711));
+    z-index: 0;
+}
+/* Parent container to hold 3D perspective */
+.container {
+    perspective: 100em; /* Ensures a deep 3D perspective */
+}
+
+/* Content styling with 3D appearance */
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: calc(24vh + 70vw);
+    aspect-ratio: 16 / 8.5;
+    background: linear-gradient(to left bottom,#e1eeff,#ffffff45);
+    backdrop-filter: blur(1px) ;
+    border: 3px #fff solid;
+    transition: 0.3s all;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) perspective(75em);
+    animation: showCo 1s ease  .9s forwards;
+
+}
+@keyframes showCo {
+    0% {
+        transform: rotateX(28deg)  perspective(75em);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0deg) perspective(2em);
+        opacity: 1;
+    }
+}
+
+
+.content .textContent{
+padding: 30px;
+    width: 50%;
+    font-size: 30px;
+    text-align: right;
+    
+}
+.content .textContent .btns{
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 10px;
+flex-wrap: wrap;
+justify-content: space-around;
+
+    }
+.content .textContent .btns button{
+display: flex;
+align-items: center;
+padding: 6px 25px;
+color: #fff;
+background:var(--clr);
+border: 2px #eee solid;
+box-shadow: 0 0 10px -3px var(--clr);
+outline: none;
+font-weight: 600;
+cursor: pointer;
+gap: 10px;
+border-radius: 50px;
+& span{
+    position: relative;
+    top: 3px;
+}
+}
+.content .textContent .btns button:hover{
+
+    opacity: .7;
+}
+.content .textContent .text{
+    color:  var(--Black);
+}
+
+.content .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+.content .img img{
+  width: 50%;
+}
+span.mark{
+    background: linear-gradient(to right,var(--mainColor),#07f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+      font-size: 40px;
+    font-weight:600;
+    text-align: center;
+}
+@media (max-width:720px) {
+
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        width:calc(15vh +  62vw);
+height: 90vh;
+        transition: .3s all;
+    }
+
+    .content .img{
+        position: relative;
+        margin:  20px;
+        text-align: center;
+        width: 20%;
+
+    }
+    .content .textContent{
+        
+          
+        width: 90%;
+        padding: 10px;
+            font-size: 25px;
+            text-align: right;
+        }   
+        .content .textContent .mark{
+            padding: 10px;
+                width: 50%;
+                font-size: 35px;
+                text-align: right;
+            }   
+.home{
+    animation: goAround 60s linear infinite;
+}
+@keyframes goAround {
+    0%{
+        background-position-x: 0%;
+    }
+    50%{
+        background-position-x: 100%;
+    }
+    100%{
+        background-position-x: 0%;
+    }
+}
+        }
+    
+       
