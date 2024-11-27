@@ -1,0 +1,14 @@
+.table{
+    position: relative;
+    /* top: -65px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 65px) ;
+    width: 100vw;
+}
+.table img{
+    width: 90vw;
+    border-radius: 20px;
+    z-index: 0;
+}

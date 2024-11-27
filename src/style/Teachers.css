@@ -1,0 +1,94 @@
+@import url(./index.css);
+.Teachers {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  user-select: none;
+  gap: 20px;
+
+  & .teacherBox {
+      position: relative;
+      top: 20px;
+      width: 350px;
+      height: 450px;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+border: 2px #eee solid;
+animation: Drop 1s;
+transition: .1s;
+cursor: pointer;
+&:hover{
+    opacity: .7;
+}
+&:active{
+    opacity: 1;
+}
+& .tagName{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    padding:3px 10px;
+    height: 40px;
+    box-shadow: 0 2px 10px -10px var(--Black);
+    border-bottom: #1c274c0a 1px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+align-items: center;
+&::after{
+    content: '  : الاستاذ  ';
+    padding: 5px;
+    color: #1c274c;
+}
+}  
+& .icons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    overflow: hidden;
+    gap: 10px;
+    & .icon{
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+}
+  & .teacherBox .img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-height: 60%;
+    width:auto;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+  .teacherBox .img img {
+    width: 100%;
+  }
+}
+.bubble{
+translate: -50% -50%;
+    width:200px ;
+    height:200px ;
+    background: #00000035;
+    border-radius: 50%;
+    animation: 1s bubble ease-out;
+}
+@keyframes bubble {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

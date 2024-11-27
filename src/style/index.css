@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Font ;
+  font-weight: 500;
+  scroll-behavior: smooth;
+
+}
+@font-face {
+  font-family: Font;
+  src: url(../Assets/Fonts/Changa-VariableFont_wght.ttf);
+}
+::-webkit-scrollbar{display: none;}
+:root{
+  --DarkColor:#007e85;
+  --mainColor:#29c3f2;
+  --LightColor:#1890f1;
+  --mainColor2:#25e;
+  --Black:#11171f;
+  --RedColor:#FF204E;
+}
+body{
+overflow-x: hidden;  
+}
+::selection{
+  background: var(--mainColor2);
+  color:#fff;
+  text-shadow: none;
+}
+a{
+  text-decoration: none;
+}

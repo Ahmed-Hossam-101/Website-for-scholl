@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/css/main.84900cc2.css",
+    "main.js": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/js/main.bb6b6723.js",
+    "static/media/load.gif": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/load.77dd819870fd828d8944.gif",
+    "static/media/bg.jpeg": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/bg.15487a5ad49df3a0d0de.jpeg",
+    "static/media/swimming.jpg": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/swimming.1e90cb2b9d285a15820a.jpg",
+    "static/media/logo.png": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/logo.88960c747c55ed80603f.png",
+    "static/media/teacher_img.jpg": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/teacher_img.2e16111482e6f2d49ae3.jpg",
+    "static/media/Changa-VariableFont_wght.ttf": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/Changa-VariableFont_wght.89de98c2fada73a45408.ttf",
+    "static/media/runner.jpg": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/runner.1e5e6ecad271ff89e6c5.jpg",
+    "static/media/table.jpg": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/media/table.a3482c1997b39eac2098.jpg",
+    "service-worker.js": "/Ahmed-Hossam-101.github.io/Website-for-scholl/service-worker.js",
+    "index.html": "/Ahmed-Hossam-101.github.io/Website-for-scholl/index.html",
+    "main.84900cc2.css.map": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/css/main.84900cc2.css.map",
+    "main.bb6b6723.js.map": "/Ahmed-Hossam-101.github.io/Website-for-scholl/static/js/main.bb6b6723.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84900cc2.css",
+    "static/js/main.bb6b6723.js"
+  ]
+}
